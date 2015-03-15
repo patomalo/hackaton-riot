@@ -43,7 +43,7 @@ app
       //console.log("self.service = "+self.service);
       $http({
         method: self.method,
-        url:    "http://mobile.riotplatform.com:8080/riot-core-services"+ self.service,
+        url:    "http://10.100.1.178:8080/riot-core-services"+ self.service,
         params: self.params,
         data:   self.data,
         headers: self.headers
