@@ -13,8 +13,8 @@ app
       this.data = [];
       this.params = {};
       this.headers = {
-        //api_key: 'root' // para servicio local
-        api_key: 'db38a4e4f5a38bc9da1670d5c0421bcaeefffacf52acff98895f7bb19d15befa' // para la Hackaton usar esta api key
+        api_key: 'root' // para servicio local
+        //api_key: 'db38a4e4f5a38bc9da1670d5c0421bcaeefffacf52acff98895f7bb19d15befa' // para la Hackaton usar esta api key
       };
       this.service = url;
     };
@@ -43,8 +43,8 @@ app
       //console.log("self.service = "+self.service);
       $http({
         method: self.method,
-        //url:    "http://10.100.1.178:8080/riot-core-services"+ self.service, // pruebas de forma local
-        url:    "http://one.hackiot.com:8080/riot-core-services"+ self.service, // Url para la hackaton
+        url:    "http://10.100.1.178:8080/riot-core-services"+ self.service, // pruebas de forma local
+        //url:    "http://one.hackiot.com:8080/riot-core-services"+ self.service, // Url para la hackaton
         params: self.params,
         data:   self.data,
         headers: self.headers
